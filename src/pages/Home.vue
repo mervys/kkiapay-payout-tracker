@@ -3,12 +3,8 @@ import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
-  <div class="">
-    <div class="fixed bg-white w-screen py-4 flex justify-center">
-      <img src="/src/assets/images/logo.png" alt="" />
-    </div>
-    <div class="flex justify-center items-center h-screen">
-      <div class="bg-white w-[510px] h-80">
+<div>
+  <div class="bg-white w-[510px] h-80">
         <h1 class="text-blue-950 flex justify-center font-bold py-3">
           Me connecter
         </h1>
@@ -46,13 +42,12 @@ import HelloWorld from "./components/HelloWorld.vue";
         </div>
         </form>
       </div>
-    </div>
-    <div>
-    <a href="Mot de passe oublié ?" class="text-blue-600 flex justify-center underline hover:underline-offset-4">
+      <a href="Mot de passe oublié ?" class="text-blue-600 flex justify-center underline hover:underline-offset-4">
       Mot de passe oublié ?
     </a>
-  </div>
-  </div>
+</div>
+     
+
 </template>
 
 <style></style>
