@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import VButton from "../components/VButton.vue";
 import VInput from "../components/VInput.vue";
-import HelloWorld from "./components/HelloWorld.vue";
 </script>
 
 <template>
@@ -11,8 +11,11 @@ import HelloWorld from "./components/HelloWorld.vue";
       </h1>
 
       <form>
-        <div>
+        <div class="flex flex-col px-10 gap-6">
           <VInput type="text" label="Adresse Mail" />
+          <VInput type="password" label="Mot de passe " />
+          <VButton label="Se Connecter"/>
+          
           <!-- <label class="block px-10 w-96 h-96">
             <span class="block text-sm py-3">Adresse Mail</span>
             <input
