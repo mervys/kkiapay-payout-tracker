@@ -1,15 +1,12 @@
 <template>
 
     <div class="">
-        <div class="fixed bg-white w-screen py-4 flex justify-center">
-          <img src="/src/assets/images/logo.png" alt="" />
-        </div>
-        <div class=" flex justify-center items-center h-screen">
-          <div class="bg-white w-[514px] h-96 rounded border-2">
-            <div class="flex justify-center">
+        
+          <div class="bg-white w-[514px] h-96 rounded border-1">
+            <div class="flex justify-center py-8">
           <img src="/src/assets/images/Main.png" alt="" />
         </div>
-        <div class="flex justify-center py-10">
+        <div class="flex justify-center py-1">
           <img src="/src/assets/images/mail-illustration.svg" alt="" />
           
         </div>
@@ -32,6 +29,6 @@
           
           </div>
         </div>
-      </div>
+      
     
     </template>

@@ -1,47 +1,26 @@
 <script setup lang="ts">
+import { useRouter } from "vue-router";
 import VButton from "../components/VButton.vue";
 import VInput from "../components/VInput.vue";
+const router = useRouter();
+function onSubmit() {
+  router.push({ name: "consult-mail2" });
+  console.log("home");
+}
 </script>
 
 <template>
   <div>
-    <div class="bg-white w-[510px] h-80">
+    <div class="bg-white w-[509px] h-80 rounded border-1">
       <h1 class="text-blue-950 flex justify-center font-bold py-3">
         Me connecter
       </h1>
 
-      <form>
+      <form @submit.prevent="onSubmit()">
         <div class="flex flex-col px-10 gap-6">
           <VInput type="text" label="Adresse Mail" />
           <VInput type="password" label="Mot de passe " />
-          <VButton label="Se Connecter"/>
-          
-          <!-- <label class="block px-10 w-96 h-96">
-            <span class="block text-sm py-3">Adresse Mail</span>
-            <input
-              type="Adresse Mail"
-              class="rounded border-2 border-indigo-500/50 w-[402px] h-10"
-            />
-            <span class="block text-sm py-3">Mot de passe</span>
-            <div class="relative w-[402px] h-10">
-              <input
-                type="Mot de passe "
-                class="rounded border-2 border-indigo-500/50 h-10 w-full"
-              />
-              <div class="absolute right-0 inset-y-0 flex items-center mr-2">
-                <img src="/src/assets/images/Vector.png" alt="" />
-              </div>
-            </div>
-
-            <span class="block py-3"></span>
-            <div
-              class="rounded border-2 bg-red-500 h-10 w-[402px] flex justify-center"
-            >
-              <div class="flex justify-center items-center text-white py-3">
-                Se Connecter
-              </div>
-            </div>
-          </label> -->
+          <VButton label="Se Connecter" />
         </div>
       </form>
     </div>
@@ -53,5 +32,3 @@ import VInput from "../components/VInput.vue";
     </a>
   </div>
 </template>
-
-<style></style>

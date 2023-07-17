@@ -1,26 +1,35 @@
 <template>
-    <div class="">
-      <div class="fixed bg-white w-screen py-4 flex justify-center">
-        <img src="/src/assets/images/logo.png" alt="" />
-      </div>
-      <div class="flex justify-center items-center h-screen">
-        <div class="bg-white w-[508px] h-80">
-          <div class="flex justify-center py-6">
-          <img src="/src/assets/images/Group 356.png"  alt="" /></div>
-          <h1 class="text-blue-950 flex justify-center text-center font-bold  py-1">
-            Félicitations ! Votre mot de passe a été modifié avec succès !
-          </h1>
-          <p class="flex justify-center text-center">Vous pouvez vous connecter afin de rejoindre l’espace de travail de votre entreprise !</p>
+    
+    
+     <div class="bg-white w-[508px] h-80  flex-col ">
+
+         <div class="flex justify-center mt-8">
+        <img src="Group 356.png">
+        </div>
+
+        <div class=" font-bold text-blue-950  text-2xl py-2">
+            <p class="flex justify-center text-center">Félicitations! Votre Mot de passe a été modifié avec succes !</p>
+            <p class="flex justify-center"> </p>
+        </div>
+
+        <div class="py-2 w-500">
+            <p class="flex justify-center text-center space-x-1">Vous  pouvez vous connecter afin de rejoindre l'espace de travail de votre entreprise!</p>
+            <p class="flex justify-center"></p>
+
+        </div>
+        <div class="py-1 flex justify-center">
+        <div class="h-10 w-[415px] bg-red-500 flex items-center justify-center rounded">
+            <p class=" text-white">
+                Se Connecter
+            </p>
+        </div>
+        </div>
+
+
+        
+        </div>
   
-              <span class="block py-3"></span>
-              <div class="rounded border-2 bg-red-500 h-10 w-[402px] flex justify-center ">
-            
-              <div class=" flex justify-center items-center text-white py-3">
-            Se Connecter
-          </div>
-        </div>
-              </div>
-        </div>
-      </div>
       
+     
   </template>
+  

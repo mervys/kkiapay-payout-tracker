@@ -1,12 +1,11 @@
+
+
 <template>
     
-    <div class ="bg-white flex justify-center py-4 h-12">
-    <img src="logo.png">
-    </div>
-    <div class ="  flex justify-center items-center h-screen ">
-     <div class="bg-white w-[509px] h-[340px]  flex-col ">
+    
+     <div class="bg-white w-[508px] h-[314px] flex-col rounded border-1 ">
 
-         <div class="flex justify-center mt-8">
+         <div class="flex justify-center mt-6">
         <img src="Group 356.png">
         </div>
 
@@ -15,8 +14,8 @@
             <p class="flex justify-center">créé avec succès !</p>
         </div>
 
-        <div class="py-2 w-500">
-            <p class="flex justify-center space-x-1">Vous  pouvez vous connecter afin de rejoindre</p>
+        <div class=" w-500">
+            <p class="flex justify-center">Vous  pouvez vous connecter afin de rejoindre</p>
             <p class="flex justify-center">l'espace de travail de votre entreprise !</p>
 
         </div>
@@ -29,10 +28,12 @@
         </div>
 
 
-        </div>
+        
         </div>
   
       
      
   </template>
+  
+
   

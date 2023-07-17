@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded border-2 bg-red-500 h-10 w-full flex justify-center">
-    <div class="flex justify-center items-center text-white py-3">
+  <div class="rounded border-1 bg-red-500  py-2 w-full flex justify-center">
+    <button type="submit" class="flex justify-center items-center text-white">
       {{ label }}
-    </div>
+    </button>
   </div>
 </template>
 <script setup lang="ts">
