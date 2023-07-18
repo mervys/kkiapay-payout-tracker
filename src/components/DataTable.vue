@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center items-center py-8 ">
-      <table class=" bg-white p-96 table-auto table-fixed border-spacing-8 border h-[330px] ">
+      <table class=" bg-white p-96 table-auto table-fixed border-spacing-8 border w-full h-[330px] ">
 
         
         

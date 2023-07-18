@@ -4,7 +4,7 @@ import DataTable from "../components/DataTable.vue";
 </script>
 
 <template>
-  <div class=" h-full">
+  <div class="h-full">
     <div class="py-5 ml-[900px] px-12">
       <div
         class="text-sm/[14px] bg-red-500 w-[250px] rounded h-8 text-white flex items-center justify-center"
@@ -15,7 +15,6 @@ import DataTable from "../components/DataTable.vue";
 
     <div class="py-12 flex-col items-center max-w-[645.75px] mx-auto">
       <div class="flex justify-center">
-
         <img src="/src/assets/images/Illustration.png" class="px-[10px]" />
 
         <div class="flex-col mr-[130px]">
@@ -33,21 +32,23 @@ import DataTable from "../components/DataTable.vue";
         </div>
       </div>
 
-      <div class=" flex justify-center items-center gap-[500px] py-8 relative">
-      <div class=" flex absolute mr-[750px]  ">
-        <img src="/src/assets/images/Pending.png" class="p-1 h-8  text-sm/[14px]" />
-        <div class="py-1">Opérations en attente</div>
+      <div class="flex w-full justify-between py-8">
+        <div class="flex ">
+          <img
+            src="/src/assets/images/Pending.png"
+            class="p-1 h-8 text-sm/[14px]"
+          />
+          <p class="py-1 ">Opérations en attente</p>
+          <div
+            class="text-blue-500 underline flex py-1 text-sm/[14px] px-96"
+          >
+            <a href="#">Toutes les opérations</a>
+          </div>
+        </div>
       </div>
-
-      <div class="text-blue-500 underline flex absolute ml-[300px] py-8 text-sm/[14px]">
-        <a href="#">Toutes les opérations</a>
-      </div>
-    </div>
       <DataTable></DataTable>
-      
-    
     </div>
-<!--div class=" flex justify-center items-center gap-[500px] py-6 relative">
+    <!--div class=" flex justify-center items-center gap-[500px] py-6 relative">
       <div class="flex absolute mr-[950px]">
         <img src="/src/assets/images/Pending.png" class="p-1 h-8" />
         <div>Opérations en attente</div>

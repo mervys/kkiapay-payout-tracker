@@ -94,28 +94,28 @@ const router = createRouter({
       path: "/Operation-successfully",
       name: "operation-successfully",
       component: OperationSuccessfully,
-      meta: { layout: "dashboard" },
+      meta: { layout: "dashboard", title: "Reversements" },
     },
 
     {
       path: "/Reversements1",
       name: "reversements1",
       component: Reversements1,
-      meta: { layout: "dashboard" },
+      meta: { layout: "dashboard", title: "Reversements" },
     },
 
     {
       path: "/Reversements2",
       name: "reversements2",
       component: Reversements2,
-      meta: { layout: "dashboard" },
+      meta: { layout: "dashboard", title: "Reversements" },
     },
 
     {
       path: "/Operation-reversements",
       name: "operation-reversements",
       component: OperationReversements,
-      meta: { layout: "dashboard" },
+      meta: { layout: "dashboard", title: "Reversements" },
     },
 
     {
