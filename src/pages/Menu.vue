@@ -1,11 +1,6 @@
-<script setup lang="ts">
-import { useRouter } from "vue-router";
-import DataTable from "../components/DataTable.vue";
-</script>
-
 <template>
   <div class="h-full">
-    <div class="py-5 ml-[900px] px-12">
+    <div class="max-w-[920px] h-[80px] mx-auto flex justify-end">
       <div
         class="text-sm/[14px] bg-red-500 w-[250px] rounded h-8 text-white flex items-center justify-center"
       >
@@ -13,7 +8,7 @@ import DataTable from "../components/DataTable.vue";
       </div>
     </div>
 
-    <div class="py-12 flex-col items-center max-w-[645.75px] mx-auto">
+    <div class="py-12 flex-col items-center max-w-3xl mx-auto">
       <div class="flex justify-center">
         <img src="/src/assets/images/Illustration.png" class="px-[10px]" />
 
@@ -33,20 +28,18 @@ import DataTable from "../components/DataTable.vue";
       </div>
 
       <div class="flex w-full justify-between py-8">
-        <div class="flex ">
+        <div class="flex">
           <img
             src="/src/assets/images/Pending.png"
             class="p-1 h-8 text-sm/[14px]"
           />
-          <p class="py-1 ">Opérations en attente</p>
-          <div
-            class="text-blue-500 underline flex py-1 text-sm/[14px] px-96"
-          >
-            <a href="#">Toutes les opérations</a>
-          </div>
+          <p class="py-1">Opérations en attente</p>
+        </div>
+        <div class="text-blue-500 underline flex py-1 text-sm/[14px]">
+          <a href="#">Toutes les opérations</a>
         </div>
       </div>
-      <DataTable></DataTable>
+      <DataTable :items="items" />
     </div>
     <!--div class=" flex justify-center items-center gap-[500px] py-6 relative">
       <div class="flex absolute mr-[950px]">
@@ -219,3 +212,48 @@ import DataTable from "../components/DataTable.vue";
     </div-->
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+import { useRouter } from "vue-router";
+import DataTable from "../components/DataTable.vue";
+
+const items = ref([
+  {
+    status: "En attente",
+    reference: "Open SI SAS (2134567345678)",
+    businessaccount: "Casier-judiciaire",
+    totalamount: "14800000",
+  },
+  {
+    status: "En attente",
+    reference: "Gilles Kounou (2299843543)",
+    businessaccount: "APIEx",
+    totalamount: "15000000",
+  },
+  {
+    status: "En attente",
+    reference: "Gilles Kounou (2299843543)",
+    businessaccount: "Casier-judiciaire",
+    totalamount: "16000000",
+  },
+  {
+    status: "En attente",
+    reference: "6wPxb9weQpS",
+    businessaccount: "Casier-judiciaire",
+    totalamount: "17000000",
+  },
+  {
+    status: "En attente",
+    reference: "un7caBhuiew",
+    businessaccount: "APIEx",
+    totalamount: "18000000",
+  },
+  {
+    status: "En attente",
+    reference: "6wP13434QpS",
+    businessaccount: "Casier-judiciaire",
+    totalamount: "19000000",
+  },
+]);
+</script>

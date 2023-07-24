@@ -11,22 +11,22 @@ function onSubmit() {
 
 <template>
   <div>
-    <div class="bg-white w-[509px] h-80 rounded border-1">
-      <h1 class="text-blue-950 flex justify-center font-bold py-3">
+    <div class="bg-white w-[510px] h-82 rounded border-1">
+      <h1 class="text-blue-950 flex justify-center font-bold py-6">
         Me connecter
       </h1>
 
       <form @submit.prevent="onSubmit()">
-        <div class="flex flex-col px-10 gap-6">
-          <VInput type="text" label="Adresse Mail" />
+        <div class="flex flex-col px-10 gap-4">
+          <VInput type="text" label="Adresse Mail" class="" />
           <VInput type="password" label="Mot de passe " />
-          <VButton label="Se Connecter" />
+          <VButton label="Se Connecter" class="" />
         </div>
       </form>
     </div>
     <a
       href="Mot de passe oublié ?"
-      class="text-blue-600 flex justify-center underline hover:underline-offset-4"
+      class="text-blue-600 flex justify-center underline hover:underline-offset-4 py-3"
     >
       Mot de passe oublié ?
     </a>

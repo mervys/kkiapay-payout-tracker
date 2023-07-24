@@ -17,6 +17,7 @@ import { useRoute } from 'vue-router';
 import GuestLayout from './layouts/GuestLayout.vue';
 import { computed } from 'vue';
 import DashBoardLayout from './layouts/DashBoardLayout.vue';
+
 const route=useRoute()
 const layout=computed(()=>route.meta.layout)
 

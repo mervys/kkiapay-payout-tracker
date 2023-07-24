@@ -8,12 +8,12 @@
         </div>
 
         <div class=" font-bold text-blue-950  text-2xl py-2">
-            <p class="flex justify-center text-center">Félicitations! Votre Mot de passe a été modifié avec succes !</p>
+            <p class="flex justify-center text-center">Félicitations! Votre Mot de passe a <br> été modifié avec succes !</p>
             <p class="flex justify-center"> </p>
         </div>
 
         <div class="py-2 w-500">
-            <p class="flex justify-center text-center space-x-1">Vous  pouvez vous connecter afin de rejoindre l'espace de travail de votre entreprise!</p>
+            <p class="flex justify-center text-center space-x-1">Vous  pouvez vous connecter afin de rejoindre <br> l'espace de travail de votre entreprise!</p>
             <p class="flex justify-center"></p>
 
         </div>

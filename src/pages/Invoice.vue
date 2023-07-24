@@ -2,3 +2,66 @@
 import { useRouter } from "vue-router";
 
 </script>
+
+<template>
+    <div class=" flex bg-blue-800 text-white  w-full">
+        <div  class="w-[173.6px] h-[28px] py-[32px] ml-[52px] mr-[417px]">
+            <img src="/src/assets/images/Base.png"/>
+        </div>
+        <div class="mr-[56px] ml-[32px] ">
+            <p class="text-[24px] font-bold py-4 ">Invoice</p>
+            <p class=" text-[14px]">Référence de l'opération</p>
+            <p class="py-2 text-[14px]">12345678</p>
+            <P class=" text-[14px]">Date</P>
+            <p class="text-[14px]">15 Avril 2021</p>
+        </div>
+        </div>
+        <div class="bg-white flex justify-between px-[56px] text-[14px] py-[32px]">
+        <div class="">
+            <p ><b>Pour le compte de :</b></p>
+            <p>Casier Judiciaire Extrait B3</p>
+            <p>pns@yopmail.com</p>
+            <p>(229) 12 32 21 32</p>
+            <div class="mt-4">
+                <b>Compte Bancaire</b>
+                <p>Ecobank Benin</p>
+                <p class="">PNS (12345 6789 GB0001)</p>
+                <div class="bg-blue-100 w-ful h-[40px] flex justify-between mt-8">
+                <b>ITEM</b>
+                <p class="">
+                <b>MONTANT</b></p>
+            </div>
+            </div>
+            <div class="mt-6">
+                <p><b>Reversement des avoirs collectés via KKiaPay </b>(Transactions du 14 Février au 28 Février 2021)</p>
+            </div>
+            <div>
+            <p class="mt-1"><b>Frais de reversement</b></p></div>
+            <p class="mt-[150px]"><b>Commentaires</b></p>
+        <p class="">Aucun</p>
+        <div class="flex mt-6" >
+            <p><b>Besoin d’aide ?</b>
+    
+        <a href="support@kkiapay.me">support@kkiapay.me</a></p></div>
+        </div>
+        
+        <div>
+           <div class="ml-[56px] text-[14px]">
+            <b>
+              Opération effectuée par :  
+            </b>
+            <p>Open SI SAS</p>
+            <P>support@kkiapay.me</P>
+            <P>(229) 12 32 21 32</P>
+            <P class="">United States</P>
+           </div> 
+           <div>
+            <p class="mt-[169px]">123 434 322 432 Fcfa</p>
+           </div>
+           <p class="mt-[36px]">7000 Fcfa</p>
+           <div class="bg-black w-full h-1 mt-[19px] "></div>
+           <div class="flex justify-between mt-[19px]"><p>Total</p>
+        <p>123 434 329 234 Fcfa</p></div>
+        </div>
+        </div>
+</template>

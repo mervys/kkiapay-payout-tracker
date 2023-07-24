@@ -20,7 +20,7 @@
       <VInput type="text" label="Adresse Mail" /></div>
       <div class="py-2 ">
           <VInput type="password" label="Mot de passe " /></div>
-          <div class="py-6 px-16">
+          <div class="py-6 px-14">
           <VButton label="Se Connecter" /></div>
       <!--<label class="ml-8">
       Mot de passe 

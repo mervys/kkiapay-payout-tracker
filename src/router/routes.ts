@@ -10,9 +10,7 @@ import ReinitialisePassword from "../pages/ReinitialisePassword.vue";
 import ConsultMail2 from "../pages/ConsultMail2.vue";
 
 import Menu from "../pages/Menu.vue";
-import Reversements1 from "../pages/Reversements1.vue";
 import OperationSuccessfully from "../pages/OperationSuccessfully.vue";
-import Reversements2 from "../pages/Reversements2.vue";
 import OperationReversements from "../pages/OperationReversements.vue";
 import Invoice from "../pages/Invoice.vue";
 
@@ -97,32 +95,24 @@ const router = createRouter({
       meta: { layout: "dashboard", title: "Reversements" },
     },
 
-    {
-      path: "/Reversements1",
-      name: "reversements1",
-      component: Reversements1,
-      meta: { layout: "dashboard", title: "Reversements" },
-    },
+    
+      
 
-    {
-      path: "/Reversements2",
-      name: "reversements2",
-      component: Reversements2,
-      meta: { layout: "dashboard", title: "Reversements" },
-    },
-
+    
     {
       path: "/Operation-reversements",
       name: "operation-reversements",
       component: OperationReversements,
+      props: true,
       meta: { layout: "dashboard", title: "Reversements" },
+      
     },
 
     {
       path: "/Invoice",
       name: "invoice",
       component: Invoice,
-      meta: { layout: "dashboard" },
+      
     },
   ],
 });
