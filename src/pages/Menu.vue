@@ -39,6 +39,7 @@
           <a href="#">Toutes les opérations</a>
         </div>
       </div>
+      <div class="bg-slate-100 h-1 w-[750px] mb-3"></div>
       <DataTable :items="items" />
     </div>
     <!--div class=" flex justify-center items-center gap-[500px] py-6 relative">
@@ -224,36 +225,42 @@ const items = ref([
     reference: "Open SI SAS (2134567345678)",
     businessaccount: "Casier-judiciaire",
     totalamount: "14800000",
+    payment: "BANK",
   },
   {
     status: "En attente",
     reference: "Gilles Kounou (2299843543)",
     businessaccount: "APIEx",
     totalamount: "15000000",
+    payment: "MOMO",
   },
   {
     status: "En attente",
     reference: "Gilles Kounou (2299843543)",
     businessaccount: "Casier-judiciaire",
     totalamount: "16000000",
+    payment: "MOMO",
   },
   {
     status: "En attente",
     reference: "6wPxb9weQpS",
     businessaccount: "Casier-judiciaire",
     totalamount: "17000000",
+    payment: "BANK",
   },
   {
     status: "En attente",
     reference: "un7caBhuiew",
     businessaccount: "APIEx",
     totalamount: "18000000",
+    payment: "BANK",
   },
   {
     status: "En attente",
     reference: "6wP13434QpS",
     businessaccount: "Casier-judiciaire",
     totalamount: "19000000",
+    payment: "MOMO",
   },
 ]);
 </script>

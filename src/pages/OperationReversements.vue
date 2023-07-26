@@ -24,8 +24,9 @@ function onSubmit() {
         <p class="px-2 font-bold text-[24px]" >{{ reversement.totalamount }} Fcfa</p>
         <p class="px-2 py-1 text-[18px]">Pour <b class="text-blue-500 ">Open SI SAS</b> </p>
         <div class="relative ">
-            <img src="/src/assets/images/card.png" class="px-2 absolute top-0.5" />
-        <p class="  text-[16px] px-9">Carte Bancaire</p>
+            <img v-if="reversement.payment=='BANK'" src="/src/assets/images/card.png" class="px-2 absolute top-0.5" />
+            <img v-else  src="/src/assets/images/momo.svg" class="px-2 absolute top-0.5" />
+        <p class="  text-[16px] px-9">{{ reversement.payment }}</p>
     </div>
         <p class="px-2 text-[16px]">{{ reversement.reference }}</p>
     </div>
