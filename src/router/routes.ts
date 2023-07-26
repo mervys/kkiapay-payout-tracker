@@ -13,6 +13,17 @@ import Menu from "../pages/Menu.vue";
 import OperationSuccessfully from "../pages/OperationSuccessfully.vue";
 import OperationReversements from "../pages/OperationReversements.vue";
 import Invoice from "../pages/Invoice.vue";
+import MarchandSpace from "../pages/MarchandSpace.vue";
+import MarchandSpace1 from "../pages/MarchandSpace1.vue";
+import MarchandSpace2 from "../pages/MarchandSpace2.vue";
+import MarchandSpace3 from "../pages/MarchandSpace3.vue";
+import MarchandSpace4 from "../pages/MarchandSpace4.vue";
+import MarchandSpace7 from "../pages/MarchandSpace7.vue";
+import MarchandSpace8 from "../pages/MarchandSpace8.vue";
+import MarchandSpace9 from "../pages/MarchandSpace9.vue";
+import MarchandSpace10 from "../pages/MarchandSpace10.vue";
+import MarchandSpace11 from "../pages/MarchandSpace11.vue";
+
 
 const router = createRouter({
   history: createWebHistory(),
@@ -114,6 +125,89 @@ const router = createRouter({
       component: Invoice,
       
     },
+    {
+      path: "/Marchand-space",
+      name: "marchand-space",
+      component: MarchandSpace,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space1",
+      name: "marchand-space1",
+      component: MarchandSpace1,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space2",
+      name: "marchand-space2",
+      component: MarchandSpace2,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space3",
+      name: "marchand-space3",
+      component: MarchandSpace3,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space4",
+      name: "marchand-space4",
+      component: MarchandSpace4,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space7",
+      name: "marchand-space7",
+      component: MarchandSpace7,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space8",
+      name: "marchand-space8",
+      component: MarchandSpace8,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space9",
+      name: "marchand-space9",
+      component: MarchandSpace9,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space10",
+      name: "marchand-space10",
+      component: MarchandSpace10,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+    {
+      path: "/Marchand-space11",
+      name: "marchand-space11",
+      component: MarchandSpace11,
+      
+      meta: { layout: "dashboard", title:" Nouveau reversment"},
+      
+    },
+
+
+
   ],
 });
 
