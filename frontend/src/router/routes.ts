@@ -27,7 +27,7 @@ import SuccesReversement from "../pages/SuccesReversement.vue";
 
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory("/kkiapay-payout-tracker/"),
 
   routes: [
     {

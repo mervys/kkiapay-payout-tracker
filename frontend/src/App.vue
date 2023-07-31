@@ -5,7 +5,7 @@
         <router-view/>
      </GuestLayout>
 
-     <DashBoardLayout v-else title = "route.meta.title">
+     <DashBoardLayout v-else :title ="route.meta.title">
         <router-view/>
      </DashBoardLayout>
 
