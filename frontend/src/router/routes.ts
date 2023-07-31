@@ -1,4 +1,6 @@
+
 import { createRouter, createWebHistory } from "vue-router";
+
 import Home from "../pages/Home.vue";
 import ExpiredLink from "../pages/ExpiredLink.vue";
 import ConsultMail from "../pages/ConsultMail.vue";

@@ -6,7 +6,7 @@
     
         
         <div class="flex justify-center mt-6">
-       <img src="Min.png">
+       <img src="../assets/images/Min.png">
        </div>
        <div class="py-2 text-2xl text-blue-950 flex justify-center font-bold ">
         <p>Réinitialiser votre mot de passe</p>

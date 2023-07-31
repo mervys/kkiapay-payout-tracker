@@ -75,6 +75,5 @@ const router = useRouter();
 
 function onBack() {
     router.back();
-
-}
+  }
 </script>

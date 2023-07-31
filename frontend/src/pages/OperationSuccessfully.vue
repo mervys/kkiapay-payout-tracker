@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRouter } from "vue-router";
 
 </script>
 
@@ -16,7 +17,7 @@
     <P class="text-center text-sm/[16px] text-center px"></P>
     </div>
     <div class="flex justify-center space-x-4 mt-12">
-    <div class="rounded border-2 border-red-500 w-52 h-10  py-2  flex justify-center">
+    <div class="rounded border-2 border-red-500 w-52 h-10  py-2 w-full flex justify-center">
     <button type="submit" class="flex justify-center items-center text-white">
         <p class="text-red-500">Terminer</p>
       
