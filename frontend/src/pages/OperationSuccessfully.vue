@@ -6,12 +6,12 @@
 <template>
 <div class="">
     <div class="mt-16  flex justify-center items-center">
-    <img src="/src/assets/images/Vector (2).png" class="w-[120px] h-[120px] " />
+    <img src="../assets/images/Vector(2).png" class="w-[120px] h-[120px] " />
     </div>
     <p class="text-[16px] mt-5 text-center ">L’opération de reversement du compte business <b>Open SI SAS</b> a <br> été effectué avec succès !</p>
     <div class="flex justify-center mt-6">
     <div class="">
-    <img src="/src/assets/images/wallet-outline.png" class="p-1" />
+    <img src="../assets/images/wallet-outline.png" class="p-1" />
     </div>
     <P class="text-center  text-[16px] text-center ">Solde disponible <br><b>18 345 025 Fcfa </b></P>
     <P class="text-center text-sm/[16px] text-center px"></P>

@@ -4,7 +4,7 @@
   <div class="">
     <div class="mt-16 flex justify-center items-center">
       <img
-        src="/src/assets/images/Vector (1).svg"
+        src="../assets/images/Vector(1).svg"
         class="w-[120px] mt-5 h-[120px]"
       />
     </div>

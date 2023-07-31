@@ -9,7 +9,7 @@
             <div class="w-[594px] h-[24px] flex justify-between">
                 <p class="px-3">{{ value }}</p>
                 <div class="flex items-center">
-                    <img src="../assets/images/Vector (Stroke).svg" class="w-[13px] h-[7px]">
+                    <img src="../assets/images/Vector(Stroke).svg" class="w-[13px] h-[7px]">
                 </div>
             </div>
         </div>
