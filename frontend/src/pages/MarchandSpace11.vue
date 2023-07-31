@@ -7,7 +7,7 @@
 
                         <p class="font-bold  w-[263px]h-[20px] ">Informations du bénéficiaire</p>
                         <div class="mt-2">
-                            <Bgwhitered> </Bgwhitered>
+                            <BusinessAccountListtem ifu="23 WE 895R090R"  enterprise ="Open SI SAS " owner="KOUNOU Giles" email="Opensico@gmail.com"> </BusinessAccountListtem>
                         </div>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                 Bancaire = "Numéro de l'abonné Mobile" Mobile = "Compte Mobile Money"></MRadio>
 
 
-                <Mbutton1></Mbutton1>
+                <Mbutton1 @back="onBack" @click="onSubmit"></Mbutton1>
             </div>
         </div>
 
@@ -53,9 +53,20 @@
     </div>
 </template>
 <script setup lang="ts">
-import Bgwhitered from "../components/Bgwhitered.vue";
+import BusinessAccountListtem from "../components/BusinessAccountListtem.vue";
 import Msolde from "../components/Msolde.vue";
 import Minput from "../components/Minput.vue";
 import MRadio from "../components/MRadio.vue";
-import Mbutton1 from "../components/Mbutton1.vue"
+import Mbutton1 from "../components/Mbutton1.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+function onBack() {
+    router.back();
+
+}
+function onSubmit() {
+  router.push({path: "marchand-space1"});
+  
+}
 </script>

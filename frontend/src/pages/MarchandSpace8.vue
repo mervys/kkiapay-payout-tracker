@@ -7,7 +7,7 @@
 
                         <p class="font-bold  w-[263px]h-[20px] ">Informations du bénéficiaire</p>
                         <div class="mt-2">
-                            <Bgwhitered> </Bgwhitered>
+                            <BusinessAccountListtem ifu="23 WE 895R090R"  enterprise ="Open SI SAS " owner="KOUNOU Giles" email="Opensico@gmail.com"> </BusinessAccountListtem>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <Mremember label="Se souvenir de compte Mobile Money"></Mremember>
                 </div>
 
-                <Mbutton></Mbutton>
+                <Mbutton @back="onBack " @next="onNext"></Mbutton>
             </div>
         </div>
 
@@ -61,13 +61,24 @@
     </div>
 </template>
 <script setup lang="ts">
-import Bgwhitered from "../components/Bgwhitered.vue";
+import BusinessAccountListtem from "../components/BusinessAccountListtem.vue";
 import Minput from "../components/Minput.vue";
 import Minputimg from "../components/Minputimg.vue";
 import Minputimgs from "../components/Minputimgs.vue";
 import Mbutton from "../components/Mbutton.vue";
 import Msolde from "../components/Msolde.vue";
-import Mremember from "../components/Mremember.vue"
+import Mremember from "../components/Mremember.vue";
+import { useRouter } from "vue-router";
+
+const router = useRouter();
+function onBack() {
+    router.back();
+
+}
+function onNext() {
+  router.push({ path: "marchand-space9" });
+  
+}
 
 
 </script>

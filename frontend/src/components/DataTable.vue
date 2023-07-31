@@ -1,6 +1,6 @@
 <template>
   <table class="bg-white table-auto table-fixed border-spacing-8 border w-full ">
-    
+
     <tr class="h-12 border-2 border-slate-50 rounded text-left text-[14px] ">
       <th class="pl-4">Statut</th>
       <th>Référence</th>
@@ -39,9 +39,9 @@ console.log(props.items);
 const router = useRouter();
 const store = useReversementStore();
 
-function onclick(item: Object) {
+function onclick(item) {
    store.define(item)
-  router.push({ name: "operation-reversements", });
+  router.push({ path: "operation-reversements", });
   console.log("Data-table");
 }
 

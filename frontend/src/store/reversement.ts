@@ -1,9 +1,9 @@
-import { defineStore } from "pinia";
-export const useReversementStore = defineStore("reversement", () => {
-  var reversement:any = null;
+import{defineStore} from "pinia"
 
-  function define(item: any) {
-    reversement = item;
+export const useReversementStore = defineStore("reversement", () => {
+  const reversement=null
+  function define(item) {
+    this.reversement=item;
   }
 
   return { reversement, define };

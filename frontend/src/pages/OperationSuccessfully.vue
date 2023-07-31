@@ -1,6 +1,5 @@
 <script setup lang="ts">
 
-
 </script>
 
 <template>
@@ -28,7 +27,7 @@
     <div class="rounded border-1 bg-red-500  py-2 w-52 h-10 flex justify-center">
     <button type="submit" class="flex  items-center text-white">
         
-    <img src="/src/assets/images/download.png" class="px-2" />
+    <img src="../assets/images/download.png" class="px-2" />
     <p>Télécharger la facture</p>
     </button>
 
