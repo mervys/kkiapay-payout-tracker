@@ -8,7 +8,7 @@
                     <p>{{ value }}</p>
                 </div>
             </div>
-            <img src="../assets/images/Vector (Stroke).svg" class="w-[13px] h-[7px]">
+            <img src="../assets/images/Vector(Stroke).svg" class="w-[13px] h-[7px]">
         </div>
 
 

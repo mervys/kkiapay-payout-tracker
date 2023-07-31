@@ -57,7 +57,7 @@
                         <div class="mt-3">
                             <Minputimg label="Localsation de la banque" value="Bénin">
 
-                                <img src="../assets/images/Flag-Benin.png">
+                                <img src="../assets/images/FlagBenin.png">
 
                             </Minputimg>
                         </div>

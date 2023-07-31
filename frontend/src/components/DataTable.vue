@@ -21,7 +21,7 @@
         <td>{{ item.businessaccount }}</td>
         <td>{{ item.totalamount }}</td>
         <td class="flex justify-center items-center">
-          <img src="/src/assets/images/Row Cell.png" />
+          <img src="../assets/images/RowCell.png" />
         </td>
       </tr>
     </template>

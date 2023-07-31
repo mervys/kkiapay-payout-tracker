@@ -5,7 +5,7 @@
 
                 <div class="flex justify-between w-[159px]  h-[40px] items-center">
                     <div class=" flex items-center w-[24px] h-[24px]">
-                        <img src ="../assets/images/Frame 556.png">
+                        <img src ="../assets/images/Frame556.png">
                     </div>
 
                     <p>
