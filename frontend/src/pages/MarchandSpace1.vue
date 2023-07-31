@@ -13,7 +13,7 @@
         </div>
 
         <div class="flex justify-center ">
-            <Search placeholder="OpenSI SAS" @click="onSubmit" > </Search>
+            <Search placeholder="OpenSI SAS" @click="onSubmit"> </Search>
         </div>
 
         <div class="flex justify-center">
@@ -27,15 +27,15 @@
                     <div class=" mt-4 "><b class="px-1 bold text-blue-800">04</b>Résultats trouvés pour : <a href="#"
                             class="  underline font-bold text-blue-800">Open SI SAS</a></div>
                 </div>
-    
-                    <ul>
-                        <li v-for="payout in store.payouts" class="py-5">
-                            <BusinessAccountListtem @click="onSubmit" :ifu="payout.companyIfu" :enterprise="payout.companyName"
-                                :email="payout.companyName" :owner="payout.companyOwnerName"> </BusinessAccountListtem>
 
-                        </li>
-                    </ul>
-            
+                <ul>
+                    <li v-for="payout in store.payouts" class="py-5">
+                        <BusinessAccountListtem @click="onSubmit" :ifu="payout.companyIfu" :enterprise="payout.companyName"
+                            :email="payout.companyName" :owner="payout.companyOwnerName"> </BusinessAccountListtem>
+
+                    </li>
+                </ul>
+
 
 
             </div>
@@ -62,4 +62,4 @@ function onSubmit() {
     router.push({ path: "marchand-space2" });
 }
 
-</script>
+</script>../store/payouts
