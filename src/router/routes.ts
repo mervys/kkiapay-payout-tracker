@@ -8,8 +8,10 @@ import ExistAccount from "../pages/ExistAccount.vue";
 import ReinitialisePassword2 from "../pages/ReinitialisePassword2.vue";
 import ReinitialisePassword from "../pages/ReinitialisePassword.vue";
 import ConsultMail2 from "../pages/ConsultMail2.vue";
+import DashBoardLayout from "../layouts/DashBoardLayout.vue";
 
-import Menu from "../pages/Menu.vue";
+import Root from "../pages/Menu.vue";
+import Root1 from "../pages/CreateAccount.vue";
 import OperationSuccessfully from "../pages/OperationSuccessfully.vue";
 import OperationReversements from "../pages/OperationReversements.vue";
 import Invoice from "../pages/Invoice.vue";
@@ -23,192 +25,93 @@ import MarchandSpace8 from "../pages/MarchandSpace8.vue";
 import MarchandSpace9 from "../pages/MarchandSpace9.vue";
 import MarchandSpace10 from "../pages/MarchandSpace10.vue";
 import MarchandSpace11 from "../pages/MarchandSpace11.vue";
+import GuestLayout from "../layouts/GuestLayout.vue";
 
+const routes = [
+  {
+
+    path: "/",
+    component: DashBoardLayout,
+    children: [
+      {
+        path: '',
+        component: Root,
+        meta: { title: "Home" },
+      },
+      {
+        path: 'marchand-space1',
+        component: MarchandSpace1,
+        meta: { title: "Nouveau reversement" },
+      }, {
+        path: 'marchand-space2',
+        component: MarchandSpace2,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space3',
+        component: MarchandSpace3,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space4',
+        component: MarchandSpace4,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space7',
+        component: MarchandSpace7,
+        meta: { title: "Nouveau reversement" },
+      }, {
+        path: 'marchand-space8',
+        component: MarchandSpace8,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space9',
+        component: MarchandSpace9,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space10',
+        component: MarchandSpace10,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'marchand-space11',
+        component: MarchandSpace11,
+        meta: { title: "Nouveau reversement" },
+      },
+      {
+        path: 'operation-reversements',
+        component: OperationReversements,
+        meta: { title: "Reversement" },
+      },
+      {
+        path: 'operation-sucessfully',
+        component: OperationSuccessfully,
+        meta: { title: "Reversement" },
+      },
+    ]
+  },
+
+  {
+    path: "/auth",
+    component: GuestLayout,
+    children:
+      [
+        {
+          path: '',
+          component:CreateAccount,
+        },
+      ]
+  }
+
+
+]
 
 const router = createRouter({
   history: createWebHistory(),
-
-  routes: [
-    {
-      path: "/",
-      name: "home",
-      component: Home,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/expired-link",
-      name: "expired-link",
-      component: ExpiredLink,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/consult-mail",
-      name: "consult-mail",
-      component: ConsultMail,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/create-account",
-      name: "create-account",
-      component: CreateAccount,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/exist-account",
-      name: "exist-account",
-      component: ExistAccount,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/password-modify",
-      name: "password-modify",
-      component: PasswordModify,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/Reinitialise-password2",
-      name: "reinitialise-password2",
-      component: ReinitialisePassword2,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/Reinitialise-password",
-      name: "reinitialise-password",
-      component: ReinitialisePassword,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/Consult-mail2",
-      name: "consult-mail2",
-      component: ConsultMail2,
-      meta: { layout: "guest" },
-    },
-
-    {
-      path: "/menu",
-      name: "menu",
-      component: Menu,
-      meta: { layout: "dashboard", title: "Home" },
-    },
-
-    {
-      path: "/Operation-successfully",
-      name: "operation-successfully",
-      component: OperationSuccessfully,
-      meta: { layout: "dashboard", title: "Reversements" },
-    },
-
-    
-      
-
-    
-    {
-      path: "/Operation-reversements",
-      name: "operation-reversements",
-      component: OperationReversements,
-      props: true,
-      meta: { layout: "dashboard", title: "Reversements" },
-      
-    },
-
-    {
-      path: "/Invoice",
-      name: "invoice",
-      component: Invoice,
-      
-    },
-    {
-      path: "/Marchand-space",
-      name: "marchand-space",
-      component: MarchandSpace,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space1",
-      name: "marchand-space1",
-      component: MarchandSpace1,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space2",
-      name: "marchand-space2",
-      component: MarchandSpace2,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space3",
-      name: "marchand-space3",
-      component: MarchandSpace3,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space4",
-      name: "marchand-space4",
-      component: MarchandSpace4,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space7",
-      name: "marchand-space7",
-      component: MarchandSpace7,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space8",
-      name: "marchand-space8",
-      component: MarchandSpace8,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space9",
-      name: "marchand-space9",
-      component: MarchandSpace9,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space10",
-      name: "marchand-space10",
-      component: MarchandSpace10,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-    {
-      path: "/Marchand-space11",
-      name: "marchand-space11",
-      component: MarchandSpace11,
-      
-      meta: { layout: "dashboard", title:" Nouveau reversment"},
-      
-    },
-
-
-
-  ],
+  routes
 });
 
-export { router };
+export default router

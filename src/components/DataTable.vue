@@ -1,6 +1,6 @@
 <template>
   <table class="bg-white table-auto table-fixed border-spacing-8 border w-full ">
-    
+
     <tr class="h-12 border-2 border-slate-50 rounded text-left text-[14px] ">
       <th class="px-4">Statut</th>
       <th>Référence</th>
@@ -11,9 +11,7 @@
     <template v-for="item in items">
       <tr @click="onclick(item)" class="border-2 border-slate-50 text-[14px] ">
         <td class="">
-          <button
-            class="border-yellow-500 bg-yellow-100 border-2 border-b text-yellow-500 rounded-full px-3 p-1"
-          >
+          <button class="border-yellow-500 bg-yellow-100 border-2 border-b text-yellow-500 rounded-full px-3 p-1">
             {{ item.status }}
           </button>
         </td>
@@ -40,8 +38,8 @@ const router = useRouter();
 const store = useReversementStore();
 
 function onclick(item) {
-   store.define(item)
-  router.push({ name: "operation-reversements", });
+  store.define(item)
+  router.push({ path: "operation-reversements" });
   console.log("Data-table");
 }
 

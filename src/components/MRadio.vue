@@ -1,7 +1,7 @@
 <template>
     <div class="w-[300px] h-[144px] flex justify-between flex-col">
         <div class=" w-[300px] h-[85px]  flex space-x-2 ">
-            <input type="radio" class="w-[20px] h-[20px]">
+            <input type="radio" class="w-[40px] h-[20px] ">
             <div class="w-[500px] h-[85px]  flex-col flex justify-between">
                 
                 <p>{{ Compte }}</p>

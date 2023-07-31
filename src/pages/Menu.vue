@@ -215,7 +215,6 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { useRouter } from "vue-router";
 import DataTable from "../components/DataTable.vue";
 
 const items = ref([
