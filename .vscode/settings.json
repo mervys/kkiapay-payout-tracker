@@ -1,0 +1,12 @@
+{
+  "sqltools.useNodeRuntime": true,
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "database": "${workspaceFolder:kkiapay-payout-tracker}/backend/payout-tracker.db",
+      "name": "db",
+      "group": "db"
+    }
+  ]
+}
