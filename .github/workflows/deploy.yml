@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Replace with your main branch name
+      - main # Replace with your main branch name
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14'  # Replace with your desired Node.js version
+          node-version: "18" # Replace with your desired Node.js version
 
       - name: Install dependencies
         working-directory: frontend
