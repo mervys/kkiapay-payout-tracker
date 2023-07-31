@@ -62,4 +62,4 @@ function onSubmit() {
     router.push({ path: "marchand-space2" });
 }
 
-</script>../store/payouts
+</script>
